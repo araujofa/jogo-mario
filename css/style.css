@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+.game-board {
+    border-bottom: 10px solid rgb(1, 160, 1)!important;
+    background: linear-gradient(rgb(64, 184, 224), lightblue);
+    height: 60vh;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.pipe {
+    position: absolute;
+    width: 7%;
+    bottom: 0;
+    animation: pipe 1.5s infinite linear; 
+}
+
+@keyframes pipe {
+    from{
+        right: -7%;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+.mario {
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: mario 500ms ease-out;
+}
+
+@keyframes mario {
+    0% {
+        bottom: 0;
+    }
+    40%{
+        bottom: 105px;
+    }
+    50%{
+        bottom: 105px;
+    }
+    60%{
+        bottom: 105px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+.mountain {
+    position: absolute;
+    width: 32%;
+    bottom: 0;
+
+    animation: mountain 20s linear infinite;
+}
+
+@keyframes mountain {
+    from {
+        right: -32%;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+.cloud1 {
+    position: absolute;
+    width: 10%;
+    top: 100px;
+    animation: clouds1 20s infinite linear; 
+}
+
+.dif1 {
+    top: 190px;
+    animation: clouds1 35s infinite linear; 
+}
+
+.dif2 {
+    top: 150px;
+    animation: clouds2 36s infinite linear; 
+}
+
+.cloud2 {
+    position: absolute;
+    width: 20%;
+    top: 175px;
+    animation: clouds2 25s infinite linear; 
+}
+
+@keyframes clouds1 {
+    from{
+        right: -10%;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes clouds2 {
+    from {
+        right: -20%;
+    }
+    to {
+        right: 100%;
+    }
+}
