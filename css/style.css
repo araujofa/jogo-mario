@@ -86,24 +86,27 @@ body {
 .cloud1 {
     position: absolute;
     width: 10%;
-    top: 100px;
-    animation: clouds1 20s infinite linear; 
+    top: 80px;
+    animation: clouds1 20.5s infinite linear; 
 }
 
 .dif1 {
+    width: 7%;
     top: 190px;
     animation: clouds1 35s infinite linear; 
 }
 
 .dif2 {
-    top: 150px;
-    animation: clouds2 36s infinite linear; 
+    position: absolute;
+    width: 10%;
+    top: 30px;
+    animation: clouds2 37s infinite linear; 
 }
 
 .cloud2 {
     position: absolute;
     width: 20%;
-    top: 175px;
+    top: 150px;
     animation: clouds2 25s infinite linear; 
 }
 
